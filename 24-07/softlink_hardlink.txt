@@ -1,0 +1,3 @@
+Studied about the soft link and hard link in detail.
+Both theory and command.
+Also done some hands on for the same.
