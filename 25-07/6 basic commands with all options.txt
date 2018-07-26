@@ -1,0 +1,33 @@
+Learning 5 basic linux commands with all of its options.
+
+1.pwd::
+options: to get current dir.
+-L
+-P
+-W
+
+2.ls:
+read ls with all its commonly used options.
+
+
+3.mkdir::to create new command in ur file system
+-v 
+-m
+-p
+
+4.rmdir::rmdir command removes each directory 
+specified on the command line, if they are empty
+-p
+-v
+-ignore-fail-on-non-empty
+
+5.rm::commans used to remove file and directory
+-f
+-i
+-I
+-v
+-r
+-d = rm -d is equal to rmdir
+
+
+6.cd ::use to change dir
