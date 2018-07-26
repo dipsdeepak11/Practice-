@@ -1,0 +1,60 @@
+-vi filename
+-vi -r filename= to open in read only mode
+-2 mode:
+command and insert mode
+
+-saving and exiting::
+:wq=save and exit
+:q=exit without saving(it will warn u if there is any change)
+:q!=discard all change and exit
+ZZ=same as :wq
+:w filename=write the content to a new file u named
+:f new_filename=change the file name to new_filename
+
+-Navigating a file in VI:
+j,k,h,l=move cursor down,up,left and right(can also use arrow key 
+to do this)
+^=move to the beginning of current line
+$=move to the end of the  current line
+G=move to the last line
+nG=move to the nth line
+w=move to the beginning of the next word
+b=move to the beginning of the last word
+
+-Deleting content::
+x-delete a single character
+X-delete the character before the cursor
+r-replace the character under cursor
+nx-delete n character 
+dd-delete the current line
+
+
+-Undoing:
+u= undo the last action
+U=undo all changes in the current line
+
+-Copy Pasting:
+in command mode, type "yy" to copy a line
+and "P" paste the line.
+Similarly,for copy word ,use "yw" and paste using "p"
+
+-Searching:
+/ string= search the string in forward dir
+? string=search the strinh in backward dir
+n=move to the next occurencr of search string
+
+-Common Commands:
+i:insert text before curren cursor
+a:insert text after current cursor
+I:insert text at beginning of the current line
+A:insert text at end of the current line
+o:create new line for text entry below cursor
+O:create new line above cursor
+! command: to run any command within vi 
+:= return the total no of line 
+:.=return line no. of the current line
+
+-Set Commands:
+:set ic=ignore the case when searching
+:set nu=display line number
+:set ro=change file type to "read only"
