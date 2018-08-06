@@ -1,0 +1,37 @@
+-->What are permissions and How do they work::
+
+a file's permissions determine which users 
+may access that file, and what type of access they have to it.
+
+-->Three type of Users:
+1.USER(owns the file)  
+2.Group(users inside file defined ownership grp.) 
+3.Other(any other)
+
+-->Type of file access:
+R  W  E
+
+--->running umask ,shows us the default umask value -002
+
+--->umask basically used to set permission for a file or directory
+before the file is made.
+
+--->FIle creation mask using numerial
+READ - 4
+WRITE - 2
+EXECUTE - 1
+
+-->    DEFAULT         UMASK-DEFAULT     FINAL
+  
+file--   666                 002           664
+
+dir---   777                 002           775
+
+--->So,default file permission after default umask apply
+rw-rw-r--
+
+
+--->CHANGE UMASK::
+1.umask 022
+2.umask a+r(give all the permission to read)
+

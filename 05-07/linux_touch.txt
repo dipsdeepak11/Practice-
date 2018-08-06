@@ -1,0 +1,33 @@
+Touch is basically used to change the timestamp.It can also be used
+to create file
+
+A timestamp is information associated with a file that identifies 
+an important time in the file's history.
+
+3 type of time:
+  -access time
+  -modification time
+  -change time
+
+The only required argument to touch is a file name.
+
+If no options is provided, the touch will change all the 3 type of
+time to the system time.
+
+OPTIONS::
+-a = change the access time only
+-c = do not create file
+-d = take a human readable data string(Dec 1,2017 00:00:00)
+-h = change the time of symbolic link not the referenced file.
+-m =set the modificaion time only
+-t = use the numeric timestamp instead of current time
+(CCYYMMDDHHMM.SS)
+
+--> touch -cr a.txt b.txt == change the c and m time of b to 
+match time of a
+
+Checking file times with stat::
+   we can check the file time using stat command
+--- if file not exist, first make the file using touch and 
+then stat the file.
+

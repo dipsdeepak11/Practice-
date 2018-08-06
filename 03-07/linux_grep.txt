@@ -1,0 +1,41 @@
+1.Full form -- globally search for regular expression and print out
+
+2.Syntex = grep [options] pattern [files]
+
+3.By default, the grep is case sensitive.
+To make it case insensitive, we can use 
+-> grep -i "pattern" filename
+
+4.grep -c = print the count of no. of matches.
+
+5.grep -l = Display the file names that matches the pattern
+
+6.By default, grep matches the given string/pattern even 
+  if it found as a substring in a file.
+
+grep -w =search only for the full word
+
+7.grep -n =Show line number while displaying the output 
+  using grep -n
+
+8.grep "^pattern" filename = display the line which start with
+the pattern
+
+9.grep "pattern$" filename =display the line which end with 
+the pattern
+
+10. grep --color =our pattern will be visible in color
+
+11.seaching multiple file
+grep "pattern" * 
+grep "pattern" *.html
+
+12.searching recursively in sub directory and files
+grep -r
+
+13.want to search for any patern which start with A and end with B
+so ,we do 
+grep "A.*B" filename
+
+14.
+ 

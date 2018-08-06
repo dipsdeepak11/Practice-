@@ -1,0 +1,31 @@
+-> chmod is used to change the permissions for files and directory
+after the file or dir is created.
+
+->general form:
+   chmod options permissions file name
+
+-->Operator  Description
+  +        Adds the specified modes to the
+            specified classes
+
+  -        Removes the specified modes from 
+             the specified classes
+
+  =        The modes specified are to be made
+            the exact modes for the specified 
+            classes
+
+
+-->chmod -R 755 filename(change for everone)
+--->chmod u=rw file(change only for owner)
+
+----> Make permission for a file same as another file ::
+chmod --reference=file1 file2
+
+----> Change execute permission only on the 
+    directories (files are not affected)
+
+chmod u+x *(only directory and sub directory are affected)
+-->chmod a=wx file(change for everyone)
+
+
