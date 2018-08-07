@@ -1,0 +1,19 @@
+->Reports a snapshot of the status of currently running processes.
+
+syntax -- ps -option
+
+-e= select all processes
+-a=Select all processes except both session leaders and processes 
+   not associated with a terminal.
+-A= same as -e
+-d= select all process except session leader
+-T =all processes assocaited with this terminal
+-r =only running process
+-p =select by process ID
+-s =select by session ID
+-t =select by tty
+-f= do full format listing
+-I=long format
+
+
+IN PROGRESS,,,,

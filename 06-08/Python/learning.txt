@@ -1,0 +1,70 @@
+ZIP:::
+
+--->The purpose of zip() is to map the similar index of multiple
+ containers so that they can be used just using as single entity.
+
+--->Example::
+name=["a","b","c","d"]
+marks=[12,23,54,33]
+
+mapped=zip(name,marks)
+
+mapped=set(mapped) ("can we convert to set,list,dict")
+print(mapped)
+
+Unzip--- a,b=zip(*mapped)--(variable are based no. of
+                             element in zip)
+
+****If the 2 iterator to be zipped,have diff. no, od element,than
+the zip contain the no .of element=iterator having smaller no.
+of element.
+
+***DIFFERENCE BETWEEN ZIP() AND IZIP()::
+zip return actual list and izip return an izip object, so zip
+support all the funcctioanlity of list.
+on the other hand, izip saves memeory.
+
+
+ENUMERATE:::
+
+This add a counter to a iterable and returnit in the form of 
+enumerate object.
+
+RETURN VALUE IS OF ENUMERATE OBJECT.
+
+SYNTAX= enumerate(iterable,start=0)
+
+Example 1::
+l1=["a","b","c"]
+res=enumerate(l1)
+res2=enumerate(l1,,2)
+print list(res) (**converating it to the list) 
+
+OUTPUT===  0 a 1 b 2 c
+           2 a 3 b 4 c
+           [(0,a),(1,b),(2,c)]
+
+Example 2::
+l1=["eat","sleep","repeat"]
+
+for ele in enumerate(l1):
+     print ele    ----- (0,eat)
+
+for count,ele in enumerate(l1):
+     print count,ele     ------ 0 , eat
+
+
+##PROGRAM TO USE ZIP AND ENUMERATE TOGETHER::
+
+list_a=["a1","a2","a3"]
+list_b=["b1","b2","b3"]
+
+for i, (a,b) in enumerate(zip(list_a,list_b)):
+          print i, a, b
+
+OUTPUT===
+0  a1  b1
+1  a2  b2
+2  a3  b3
+
+
